@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMSONG</title>
+    <!--외부 스타일 시트 링크-->
+    <link rel ="stylesheet" href="./css/style.css">
+    <!--토글 메뉴 및 캐러셀 구현을 위한 제이쿼리 플러그인 스크립트 소스 연결-->
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <!--캐러셀 구현을 위한 제이쿼리 플러그인 스크립트 소스 연결-->
+    <script src="./js/jquery.bxslider.js"></script>
+    <!--캐러셀 스크립트-->
+    <link rel ="stylesheet" href="./css/jquery.bxslider.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id = "headerlogo">
+                <a href="#" id = "toggle"><img src = "./images/but_toggle.png" alt="toggle menu"></a>
+                <div id = "logo"><img src = "images/SAMSONGBAKERY.png"></div>
+                <a href="#" id = "toggle_1"><img src = "./images/shopping_bag_white_24dp.svg" alt="toggle menu"></a>
+            </div>
+            <ul>
+                <li><a href="#product">PRODUCT</a></li>
+                <li><a href="#store">STORE</a></li>
+                <li><a href="#brandstory">BRAND STORY</a></li>
+                <li><a href="#franchise">FRANCHISE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--섹션 1 메인 캐러셀 이미지-->
+    <section id = "mainimage">
+        <div class="wrapper">
+            <div class="bxslider">
+                <div><img src="./images/main1.jpg"></div>
+                <div><img src="./images/main2.jpg"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--섹션 2 product 메뉴-->
+    <section id = "product">
+        <div class="wrapper">
+        <article class="section_title">
+            <h3>PRODUCT</h3>
+        </article>
+        <input id="Best" type="radio" name="tab" checked="checked"/>
+        <input id="Bread" type="radio" name="tab" />
+        <input id="Drink" type="radio" name="tab" />
+            <section id = "product_menu">
+                <label for="Best"><b>Best</b></label>
+                <label for="Bread"><b>Bread</b></label>
+                <label for="Drink"><b>Drink</b></label>
+            </section>
+            <div class="tab_item">
+                <ul>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/1.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>통옥수수빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail"> 
+                            <img src="./images/product_img/2.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>먹물 통옥수수빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/3.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>야채 고로케</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/4.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>크림치즈빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/5.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>한우고로케</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/6.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>크림치즈 찰떡빵</strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab_item">
+                <ul>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/7.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>먹물마카롱</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/1.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>통옥수수빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/2.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>먹물 통옥수수빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/3.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>야채 고로케</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/4.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>크림치즈빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/6.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>크림치즈 찰떡빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/5.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>한우고로케</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/8.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>호두 단팥빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/9.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>소보로 팥빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/10.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>황금달빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/11.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>카카오빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/12.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>어니언링</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/13.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>톡톡 갈릭 바케트</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/14.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>카스테라 고물 찹살떡</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/15.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>단호박빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/16.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>바나나빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/17.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>상투앙금빵</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/18.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>고추고로케</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/19.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>라이스번</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/20.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>마늘 바케트</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/21.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>콘브레드</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/22.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>삼송 쑥떡</strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab_item">
+                <ul>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/23.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>카페모카</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/24.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>카라멜 마끼야또</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/25.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>카페라떼</strong>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail">
+                            <img src="./images/product_img/26.png"/>
+                        </div>
+                        <div class="description">
+                            <strong>아메리카노</strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--섹션 3  store 매장-->
+    <section id = "store">
+        <article class="section_title">
+            <h3>STORE</h3>
+        </article>
+        <div id = "contents">
+            <div id = "contents_img">
+                
+            </div>
+            <div class = "store_contents">
+                <div class="contents_text">
+                    <p>
+                        the <span>SAMSONG</span> STORES</br>
+                        NEARBY
+                    </p>
+                </div>
+                <div class="contents_button">
+                    <p>view more +</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--섹션 4  brand story 브랜드 스토리-->
+    <section id = "brandstory">
+        <article class="section_title">
+            <h3>BRAND STORY</h3>
+        </article>
+        <article class="section_contents">
+            <div class="contents_img">
+                <img src ="./images/BRAND.JPG" alt="Brand story image">
+            </div>
+            <div class = "contents_backimg">
+
+            </div>
+            <div class="contents_text">
+                <span>100년을 내다보며 소비자와 소통하는 기업<br/>
+                주식회사 삼송비엔씨(BNC)가 되겠습니다.<br/><br/>
+                </span>
+
+                <p>
+                1957년 대구에서 영업을 시작한 삼송빵집은 3대를 이어 대구를<br/>
+                대표하는 추억의 빵집으로 아직도 많은 소비자들의 사랑을 받고<br/>
+                있습니다.<br/><br/>
+
+                60여 년의 역사를 넘어 앞으로 100년을 바라보며 저희 삼송비엔씨는<br/>
+                삼송빵집 전국 가맹점 모집사업을 시작으로 글로벌 프랜차이즈 기업을<br/>
+                목표로 지금 새로운 도전을 시작하였습니다.<br/><br/>
+
+                고객과 소통하는 고객중심 경영이념을 바탕으로 고객의 건강과 행복을<br/>
+                회사의 최고 보람으로 여기며, 정직하고 신뢰 받는 삼송비엔씨가<br/>
+                되도록 노력 하겠습니다.<br/><br/>
+
+                감사합니다.<br/>
+                </p>
+            </div>
+        </article>
+    </section>
+
+        <!--섹션 5 franchise 가맹-->
+    <section id = "franchise">
+        <article class="section_title">
+            <h3>FRANCHISE</h3>
+        </article>
+        <div class = franchise_contents>
+            <div id = "franchise_1">
+                <img src = "images/logo1.png">
+            </div>
+            <div id = "franchise_2">
+                <h2>
+                    줄서서 먹는 화제의 베이커리,</br>
+                    삼송빵집으로 새로운 도전을 시작해 보세요.
+                </h2>
+            </div>
+            <div id = "franchise_3">
+                <div class="circle_1">
+                    <p>
+                        <span>STEP 1.</span></br></br>
+                        가맹문의 및</br>
+                        상담
+                    </p>
+                </div>
+                <div class="circle_2">
+                    <p>
+                        <span>STEP 2.</span></br></br>
+                        상권분석
+                    </p>
+                </div>
+                <div class="circle_2">
+                    <p>
+                        <span>STEP 3.</span></br></br>
+                        가맹점 계약
+                    </p>
+                </div>
+                <div class="circle_1">
+                    <p>
+                        <span>STEP 4.</span></br></br>
+                        매장 실측 및</br>
+                        도면 설계
+                    </p>
+                </div>
+                <div class="circle_1">
+                    <p>
+                        <span>STEP 5.</span></br></br>
+                        직원채용 및</br>
+                        교육진행
+                    </p>
+                </div>
+                <div class="circle_2">
+                    <p>
+                        <span>STEP 6.</span></br></br>
+                        인테리어 시공
+                    </p>
+                </div>
+                <div class="circle_2">
+                    <p>
+                        <span>STEP 7.</span></br></br>
+                        오픈 및</br>
+                        영업 준비
+                    </p>
+                </div>
+                <div class="circle_1">
+                    <p>
+                        <span>STEP 8.</span></br></br>
+                        그랜드 오픈
+                    </p>
+                </div>
+            </div>
+            <div id = "franchise_4">
+                <div class="contents_button">
+                    <p>
+                        view more +
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <!--푸터-->
+    <footer>
+        <div id="goto-top" style="display: block;"><a href="#" class="top"><p>▲</p>TOP</a></div>
+        <div class="wrapper">
+            <article id="logo">
+                <img src="./images/logo1.png" alt="logo">
+            </article>
+            <article id="contact">
+                <p>주식회사 삼송비엔씨(BNC)</p>
+                <p>대표 : 박성욱</p>
+                <p>사업자등록번호 : 720-87-00099 </p>
+                <p>본점 : 대구광역시 수성구 수성못2길 26</p>
+                <p>전화번호 : 053-556-3030</p>
+                <p>개인정보책임관리자 : 박성욱</p></br>
+                <p>Copyright ⓒ 2015. SAMSONG BNC ALL RIGHTS RESERVED.</p>
+            </article>
+        </div>
+    </footer>
+    <!--토글 메뉴 구현을 위한 자바스크립트 실행문-->
+    <script>
+        $(function() {
+            //토글 메뉴 플러그인 실행
+            var toggle = $('#toggle');
+            var menu = $('nav ul');
+            $(toggle).on('click',function (e) {
+                //이벤트 버블링 : 버튼을 감싸고 있는 wrapper에도 이벤트가 작동되는 현상
+                e.preventDefault(); //이벤트 버블링을 막기 위한 코드
+                menu.slideToggle(); //효과 메서드, slideUp(), slideDown() 효과 동시 적용
+            });
+            $(window).resize(function(){
+                if($(window).width()>764) {
+                    $("nav ul").show();
+                } else {
+                    $("nav ul").hide();
+                }
+            });
+            //캐러셀 플러그인 실행
+            $('.bxslider').bxSlider({
+                auto:true,
+                autoHover:true,
+            });
+        });
+    </script>
+</body>
+</html>
